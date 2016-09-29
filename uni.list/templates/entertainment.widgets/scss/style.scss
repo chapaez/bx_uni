@@ -1,0 +1,207 @@
+@import '../../../../../../templates/main/css/scss/settings.defaults';
+@import '../../../../../../templates/main/css/scss/setting.responsive'; 
+@import '../../../../../../templates/main/css/scss/settings.colors';
+
+@import '../../../../../../templates/main/css/scss/tools.widths';
+@import '../../../../../../templates/main/css/scss/tools.responsive';
+@import '../../../../../../templates/main/css/scss/tools.functions';
+@import '../../../../../../templates/main/css/scss/tools.mixins';
+
+@import '../../../../../../templates/main/css/scss/objects.box';
+@import '../../../../../../templates/main/css/scss/objects.media';
+@import '../../../../../../templates/main/css/scss/objects.flag';
+@import '../../../../../../templates/main/css/scss/objects.block';
+
+@import '../../../../../../templates/main/css/scss/trumps.clearfix';
+@import '../../../../../../templates/main/css/scss/trumps.width-responsive';
+@import '../../../../../../templates/main/css/scss/trumps.spacing';
+
+@import '../../../../../../templates/main/css/scss/components.buttons';
+
+
+$font: 'ctc_splash_rounded', sans-serif;
+$font--bold: "ctc_splash_roundedbold",sans-serif;
+
+
+
+
+.container.content {
+  padding: 0 0 0 2px !important;
+  
+  @include media-query(xs) {
+    padding: 0 !important;
+  }
+}
+
+
+
+
+
+/*  MASONRY SETTINGS */
+
+.gutter-sizer {
+  width: 9px;
+  
+  @include media-query(md) {
+    width: 14px;
+  }
+  
+}
+
+.grid-item {
+  width: 309px;
+  
+  @include media-query(sm) {
+    width: 240px;
+  }
+  
+  @include media-query(xs) {
+    margin: 0 auto;
+  }
+  
+}
+
+
+
+
+
+/* RIGHT COLUMN */
+
+.rcolumn {
+  float: right;
+  width: 309px;
+
+  & .banner240 {
+    background: url('/bitrix/templates/main/images/banner_background.jpg') no-repeat left top / cover rgba(0, 0, 0, 0);
+    padding: 35px;
+    margin-bottom: 14px;
+  }
+  
+  @include media-query(sm) {
+    width: 240px;
+    
+    & .banner240 {
+      background: none;
+      padding: 0;
+    }
+  }
+  
+  @include media-query(xs) {  
+    display: none;
+  }
+  
+}
+
+
+
+
+
+/* WIDGETS */
+
+.widgets-list {
+  @include media-query(xs) {
+    margin: 0 auto;
+  }
+}
+
+.widget {
+    margin-bottom: 15px;
+  
+    &__data {
+      line-height: 1em;
+      padding: 15px;
+      word-wrap: break-word;
+    }
+  
+    &__type {
+      font-family: $font;
+      font-size: 19px;
+      text-transform: capitalize;
+      @include media-query(sm) {
+        font-size: 14px;
+      }
+    }
+  
+    &__date {
+      font-family: $font;
+      font-size: 15px;
+      float: right;
+      padding-right: 60px;
+      @include media-query(sm) {
+        font-size: 13px;
+      }
+    }
+  
+    &__name {
+      font-family: $font--bold;
+      font-size: 28px;
+      line-height: 1em;
+      padding: 15px 0;
+      @include media-query(sm) {
+        font-size: 28px;
+      }
+    }
+  
+    &__image {
+      position: relative;
+    }
+  
+    &__btn {}  
+  
+}
+  .widget--blue {
+    background-color: $blue;
+  }
+  .widget--violet {
+    background-color: $violet;
+  }
+  .widget--yellow {
+    background-color: $yellow;
+    
+    & .widget__date {
+      color: $violet;
+    }
+    
+    & .widget__name > a:hover {
+      color: $violet;
+    }
+    
+  }
+  
+  
+  
+  
+  
+/* LIST WRAPPER */
+.entertainment-type-list {
+  margin: 0 0 15px; 
+}
+
+
+
+
+
+/* ICONS */
+
+.entertainment-icon {
+  position: absolute;
+  z-index: 1;
+  width:   50px;
+  height:  50px;
+  bottom: -25px;
+  right:   15px;
+  background-image: url('/bitrix/templates/main/images/icons_entetainment.png');
+  background-repeat: no-repeat;
+}
+  .entertainment-icon--casting {
+    background-position: 0 -247px;
+  }
+  .entertainment-icon--quiz {
+    background-position: 0 -61px;
+  }
+  .entertainment-icon--vote {
+    background-position: 0 -125px;
+  }
+  .entertainment-icon--test {
+    background-position: 0 -186px;
+  }

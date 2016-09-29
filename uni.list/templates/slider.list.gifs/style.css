@@ -1,0 +1,129 @@
+.filter-item,
+.carousel-filter__all,
+.carousel-filter__check {
+  display: inline-block;
+  font-family: 'ctc_splash_rounded';
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 13px;
+}
+.filter-active,
+.carousel-filter__all.active,
+.open .carousel-filter__check {
+  background: #ffc80c;
+  border-radius: 20px;
+  color: #1781ba;
+}
+.gifs-carousel__head {
+  margin-bottom: 24px;
+}
+.carousel-title {
+  position: relative;
+  margin: 0 24px 0 0;
+}
+.carousel-title .icon {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-title {
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 60px;
+  }
+  .carousel-title .icon {
+    display: block;
+    right: auto;
+    left: 0;
+    top: 0;
+  }
+}
+.carousel-filter {
+  margin-top: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+.carousel-filter__all {
+  margin-right: 24px;
+}
+.carousel-filter__all a,
+.carousel-filter__all a:visited {
+  color: #1781ba;
+}
+.carousel-filter__select {
+  display: inline-block;
+}
+.carousel-filter__check {
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 20;
+}
+.open .carousel-filter__check .caret {
+  transform: rotateX(180deg);
+}
+.carousel-filter__list {
+  width: 100%;
+  border: none;
+  background: #1781ba;
+  min-width: auto;
+  margin-top: -15px;
+  padding-top: 20px;
+  z-index: 10;
+}
+.carousel-filter__list li a {
+  text-transform: uppercase;
+  color: #ffc80c;
+  font-weight: bold;
+  font-family: 'ctc_splash_rounded';
+}
+.carousel-filter__list li a:hover {
+  background: #ffc80c;
+  color: #1781ba;
+}
+@media screen and (min-width: 768px) {
+  .project_list__item {
+    width: 238px;
+  }
+  .project_list__item:nth-child(1) {
+    margin-right: 5px;
+  }
+  .project_list__item:nth-child(2) {
+    margin: 0 5px;
+  }
+  .project_list__item:nth-child(3) {
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .project_list__item {
+    width: 309px;
+  }
+  .project_list__item:nth-child(1) {
+    margin-right: 7px;
+  }
+  .project_list__item:nth-child(2) {
+    margin: 0 7px;
+  }
+  .project_list__item:nth-child(3) {
+    margin-left: 7px;
+  }
+}
+.project_list__item .name {
+  display: none;
+}
+.gifs-carousel {
+  margin-bottom: 24px;
+}
+.gifs-carousel .carousel-control {
+  margin: 0;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.comments-wrap {
+  margin-bottom: 30px;
+}

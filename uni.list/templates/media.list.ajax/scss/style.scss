@@ -1,0 +1,68 @@
+@import '../../../../../../templates/main/css/scss/settings.defaults';
+@import '../../../../../../templates/main/css/scss/setting.responsive';
+
+@import '../../../../../../templates/main/css/scss/tools.widths';
+@import '../../../../../../templates/main/css/scss/tools.responsive';
+@import '../../../../../../templates/main/css/scss/tools.functions';
+@import '../../../../../../templates/main/css/scss/tools.mixins';
+
+@import '../../../../../../templates/main/css/scss/objects.box';
+@import '../../../../../../templates/main/css/scss/objects.media';
+@import '../../../../../../templates/main/css/scss/objects.flag';
+@import '../../../../../../templates/main/css/scss/objects.block';
+
+@import '../../../../../../templates/main/css/scss/trumps.clearfix';
+@import '../../../../../../templates/main/css/scss/trumps.width-responsive';
+@import '../../../../../../templates/main/css/scss/trumps.spacing';
+
+$violet: rgb(93, 65, 147);
+$gutter: 14px;
+$user_height: 40px;
+
+
+
+
+
+/*
+ *  Rewrite media object rules
+ *  [1] - rewrite 15px margin from top
+ */
+.media {
+  margin-top: 0;
+}
+
+
+
+
+
+
+.media-list {  
+   
+  &__item {
+    width: 309px;
+    background-color: $violet;
+    margin-bottom: $gutter;
+    word-wrap: break-word;
+    box-shadow: 0px 6px 16px -2px rgb(4, 54, 88);
+  }
+   
+  &__gutter {
+    width: $gutter;
+  }
+  
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  
+  &__user_image {
+    width: $user_height;
+    height: $user_height;
+    @include rounded( halve($user_height) );
+  }
+
+  &__user_name {
+    height: $user_height;
+  }
+  
+}

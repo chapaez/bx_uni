@@ -1,0 +1,136 @@
+.person-wrap {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.person-wrap h3 {
+  text-align: left;
+}
+.person-list {
+  position: relative;
+  font-size: 0;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 320px;
+}
+@media screen and (min-width: 750px) {
+  .person-list {
+    max-width: 550px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .person-list {
+    max-width: 640px;
+  }
+}
+.person-item {
+  display: inline-block;
+  width: 154px;
+  padding: 0 11px;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-bottom: 30px;
+  vertical-align: top;
+}
+.pi-photo {
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 2px solid #fff;
+  height: 137px;
+  width: 100%;
+}
+@media screen and (min-width: 970px) {
+  .pi-photo {
+    height: 137px;
+  }
+}
+.pi-photo img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.pi-name {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+}
+.person-list-controls {
+  font-size: 0;
+  padding: 0 13px;
+  text-align: center;
+}
+.plc-btn {
+  vertical-align: top;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid #fff;
+  font-size: 18px;
+  padding: 10px 20px 10px 45px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-color: transparent;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) {
+  .plc-btn {
+    padding: 0 !important;
+    height: 36px;
+    width: 56px;
+    box-sizing: content-box;
+    background-position: center center !important;
+  }
+  .plc-btn span {
+    display: none;
+  }
+}
+.plc-btn--next {
+  padding-left: 20px;
+  padding-right: 45px;
+  background-image: url("img/btn_next.png");
+  background-position: 105px 14px;
+}
+.plc-btn--prev {
+  background-position: 18px 14px;
+  background-image: url("img/btn_prev.png");
+  margin-right: 15px;
+}
+.plc-btn-list {
+  display: none;
+  margin-right: 15px;
+  font-size: 0;
+}
+@media screen and (min-width: 750px) {
+  .plc-btn-list {
+    display: inline-block;
+  }
+}
+.plcb-item {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  font-size: 18px;
+  margin-right: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  display: inline-block;
+  background-color: transparent;
+}
+.plcb-item:last-child {
+  margin-right: 0;
+}
+.plcb-item-more {
+  border: none;
+}

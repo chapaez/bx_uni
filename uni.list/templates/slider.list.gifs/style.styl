@@ -1,0 +1,112 @@
+$orange = #ffc80c
+$blue = #1781ba
+
+.filter-item
+  display inline-block
+  font-family 'ctc_splash_rounded'
+  text-transform uppercase
+  font-weight bold
+  cursor pointer
+  height 28px
+  line-height 28px
+  padding 0 13px
+
+.filter-active
+  background $orange
+  border-radius 20px
+  color $blue
+
+.gifs-carousel
+  &__head
+    margin-bottom 24px
+
+.carousel-title
+  position relative
+  margin 0 24px 0 0
+  .icon
+    display none
+  @media screen and (min-width 768px)
+    height 48px
+    line-height 48px
+    display inline-block
+    text-transform uppercase
+    padding-left 60px
+    .icon
+      display block
+      right auto
+      left 0
+      top 0
+
+.carousel-filter
+  margin-top 10px
+  vertical-align top
+  display inline-block
+
+  &__all
+    margin-right 24px
+    a, a:visited
+      color $blue
+    @extend .filter-item
+    &.active
+      @extend .filter-active
+
+  &__select
+    display inline-block
+
+  &__check
+    background none
+    border none
+    position relative
+    z-index 20
+    @extend  .filter-item
+    .open &
+      @extend  .filter-active
+      .caret
+        transform rotateX(180deg)
+
+  &__list
+    width 100%
+    border none
+    background $blue
+    min-width auto
+    margin-top -15px
+    padding-top 20px
+    z-index 10
+    li a
+      text-transform uppercase
+      color $orange
+      font-weight bold
+      font-family 'ctc_splash_rounded'
+      &:hover
+        background $orange
+        color $blue
+
+.project_list__item
+  @media screen and (min-width 768px)
+    width 238px
+    &:nth-child(1)
+      margin-right 5px
+    &:nth-child(2)
+      margin 0 5px
+    &:nth-child(3)
+      margin-left 5px
+  @media screen and (min-width 970px)
+    width 309px
+    &:nth-child(1)
+      margin-right 7px
+    &:nth-child(2)
+      margin 0 7px
+    &:nth-child(3)
+      margin-left 7px
+  .name
+    display none
+
+.gifs-carousel
+  margin-bottom 24px
+  .carousel-control
+    margin 0
+    transform translateY(-50%)
+    top 50%
+
+.comments-wrap
+  margin-bottom 30px
