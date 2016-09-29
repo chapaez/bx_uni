@@ -1,0 +1,54 @@
+.b-img_share-gif img{
+    width: 100%;
+}
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+.share__btn-group > div {
+    padding: 0 7px 0 0;
+}
+.share.share__header {
+    padding: 10px 0;
+}
+.pack__item {
+    display: table-cell;
+}
+.share-btn {
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "ctc_splash_rounded",sans-serif;
+    font-size: 14px;
+    padding: 3px 10px;
+}
+.share-btn--vk {
+    background-color: #155e8b;
+    box-shadow: 0 1px 2px #104769;
+}
+.share-btn--vk:hover {
+    background-color: #2a74a1;
+}
+.share-btn--fb {
+    background-color: #3b5999;
+    box-shadow: 0 1px 2px #203769;
+}
+.share-btn--fb:hover {
+    background-color: #5372b5;
+}
+.share-btn--tw {
+    background-color: #00acee;
+    box-shadow: 0 1px 2px #1d8cb7;
+}
+.share-btn--tw:hover {
+    background-color: #22bffb;
+}
+.share-btn--ok {
+    background-color: #f4731c;
+    box-shadow: 0 1px 2px #bd5610;
+}
+.share-btn--ok:hover {
+    background-color: #f88d3c;
+}

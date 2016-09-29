@@ -1,0 +1,131 @@
+h1 {
+	margin: 0 auto 15px;
+}
+@media screen and (min-width: 767px) {
+	h1 {
+		margin: 0 auto 30px;
+	}
+}
+.person-wrap {
+	padding: 20px 0 0;
+	margin-bottom: 45px;
+}
+@media screen and (min-width: 767px) {
+	.person-wrap {
+		padding: 20px 7px 0;
+	}
+}
+@media screen and (min-width: 992px) {
+	.person-wrap {
+		padding: 0 7px 0;
+	}
+}
+.person-top {
+	margin-bottom: 30px;
+}
+/*div.project_header{
+	margin-bottom: 60px;
+}*/
+@media screen and (min-width: 767px) {
+	.person-top{
+		position: relative;
+	}
+}
+.person-all{
+	text-transform: uppercase;
+	text-decoration: underline;
+	display: block;
+	margin: 15px 0;
+	width: 100%;
+	text-align: right;
+	color: #ffc80c!important;
+}
+@media screen and (min-width: 767px) {
+	.person-all{
+		position: relative;
+		text-align: right;
+		padding-top: 14px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.left_column.top{
+	  width: 639px;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.person-top {
+		margin-bottom: 24px;
+		width: 100%;
+	}
+}
+.person-photo {
+	width: 100%;
+/*	border: 3px solid #fff;*/
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.person-photo img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+@media screen and (min-width: 767px) {
+	.person-photo {
+		width: 100%;
+		height: auto;
+		margin-bottom: 25px;
+	}
+}
+.person-name {
+	margin-bottom: 20px;
+}
+.person-name h3 {
+	margin: 0;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+}
+@media screen and (min-width: 767px) {
+	.person-name {
+		padding: 0;
+		margin-bottom: 17px;
+	}
+	.person-name h3 {
+		font-size: 36px;
+	}
+}
+.person-preview {
+	
+	/*text-transform: uppercase;*/
+	font-size: 14px;
+	color: #fff;
+	text-align: left;
+}
+@media screen and (min-width: 767px) {
+	.person-preview {
+		/*font-size: 18px;*/
+		padding: 0;
+	}
+}
+.person-info {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+}
+.person-info p {
+	margin: 0 0 24px;
+}
+@media screen and (min-width: 767px) {
+	.person-info {
+		width: 100%;
+		padding: 0;
+	}
+}
+.person-info-role {
+	text-align: left;
+}
+.person-info-role a {
+	text-decoration: underline;
+	color: #ffc80c;
+}
